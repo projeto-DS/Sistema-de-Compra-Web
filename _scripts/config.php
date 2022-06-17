@@ -8,7 +8,6 @@ $banco = 'banco_sistemaweb';
 $mysqli = new mysqli($servidor,$usuario,$senha,$banco);
 
 //Verifica se houve erro
-if(mysqli_connect_errno()) trigger_error(mysqli_connect_errno())
-
-
-?>
+if($mysqli->error) {
+    die("Falha ao conectar ao banco de dados: " . $mysqli->error);
+}
