@@ -1,0 +1,137 @@
+html,body{
+    height: 100%;
+    background: rgb(84, 8, 134);
+    background: linear-gradient(5deg, rgba(139,30,168,1) 30%, rgba(218,69,152,1) 80%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: #0c0ce94d;
+}
+
+.container-fluid {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+}
+
+
+
+.form-header h1::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 0.3rem;
+    background-color: #CFC7D9;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* mudar */
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 1.3rem 4rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 15px;
+}
+
+.input-box select {
+    margin: 0.6rem 0;
+    padding: 1.1rem 5.3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1.3rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6F2A8C;
+    padding: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #341959;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 930px) {
+
+    .input-group {
+        justify-content: center;
+    }
+
+}
