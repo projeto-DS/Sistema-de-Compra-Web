@@ -33,35 +33,42 @@
 
 
 
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
 
 <?php
-include '_scripts/config.php';
 
 // Executa o código quando os campos de úsuario e senha não estiverem vazios
 if (isset($_POST['usuario']) || isset($_POST['senha'])) {
+    include '_scripts/functions.php';
 
-  // Adiciona os valores do inputs ás váriaveis (real_escape_string para previnir sql injector)
-  $usuario = $mysqli->real_escape_string($_POST['usuario']);
-  $senha = $mysqli->real_escape_string($_POST['senha']);
+    if (login($_POST)) { ?>        
 
-  //Código sql para checar na tabela "dados_user" se o úsuario e a senha estão corretos
-  $sql = "SELECT * FROM dados_user WHERE usuario = '$usuario' AND senha = '$senha'";
-  //Executa o código sql e em caso de falha retorna o erro
-  $query = $mysqli->query($sql) or die("ERRO: " . $mysqli->error);
-
-
-  $qtd = $query->num_rows;
-
-  if ($qtd == 1) {
-    echo "<h1 id='test'>Funcionou<br>Usuario:" . $usuario . "<br>Senha:" . $senha . "</h1></div>";
-  } else {
-    echo "<h1 id='test'>E-mail ou senha incorretos<br>Usuario:" . $usuario . "<br>Senha:" . $senha . "</h1>";
-  }
+      <script language='javascript'>
+          swal.fire({ 
+              icon:"success",
+              text: "Feito com Sucesso!",
+              type: "success"}).then(okay => {
+                  // if (okay) {
+                  //     window.location.href = "painel.php?r=";
+                  // }
+              });
+          </script>
+          <?php }else { ?>
+      <script language='javascript'>
+          swal.fire({ 
+              icon:"error",
+              text: "Ops! Usuário não encontrado.",
+              type: "success"}).then(okay => {
+                  // if (okay) {
+                  //     window.location.href = "painel.php?r=";
+                  // }
+              });
+          </script>
+          <?php }
 }
 
 ?>

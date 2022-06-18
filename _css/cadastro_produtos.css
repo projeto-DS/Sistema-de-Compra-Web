@@ -1,11 +1,20 @@
-html,body{
-    height: 100%;
-    background: rgb(84, 8, 134);
-    background: linear-gradient(5deg, rgba(139,30,168,1) 30%, rgba(218,69,152,1) 80%);
+/* Cores */
 
-}
+/* #F207A0 */
+/* #6F2A8C */
+/* #341959 */
+/* #CFC7D9 */
+/* #1EC6D9 */
+
+/* Color Theme Swatches in Hex */
+.color-theme_image_2022-06-16_231356179-1-hex { color: #F207A0; }
+.color-theme_image_2022-06-16_231356179-2-hex { color: #6F2A8C; }
+.color-theme_image_2022-06-16_231356179-3-hex { color: #341959; }
+.color-theme_image_2022-06-16_231356179-4-hex { color: #CFC7D9; }
+.color-theme_image_2022-06-16_231356179-5-hex { color: #1EC6D9; }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -16,16 +25,15 @@ html,body{
 body {
     width: 100%;
     height: 100vh;
-
-    background: #0c0ce94d;
+    background: rgb(84, 8, 134);
 }
 
 .container-fluid {
-    width: 80%;
+    width: 95%;
     height: 80vh;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
 }
 
 .form {
@@ -35,28 +43,31 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    padding: 3rem;
+    padding: 4rem;
 }
 
-.form-header {
+.formHeader {
     margin-bottom: 3rem;
 }
 
 
+.formHeader h1 {
+    font-size: 3rem;
+}
 
-.form-header h1::after {
+.formHeader h1::after {
     content: '';
     display: flex;
     justify-content: center;
-    width: 40vw;
+    width: 50vw;
     height: 0.3rem;
-    background-color: #CFC7D9;
+    background-color: #6F2A8C;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
 }
 
-.input-group {
+.input-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -64,44 +75,55 @@ body {
     padding: 1rem 0;
 }
 
-.input-box {
+.input-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
 }
 
-.input-box input {
+.input-container input {
     margin: 0.6rem 0;
-    padding: 1.3rem 4rem;
+    padding: 1.3rem 2.5rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 15px;
+    font-size: 20px;
 }
 
-.input-box select {
+#inputNome_produto {
+    height: 100%;
+    }
+
+.input-container select {
     margin: 0.6rem 0;
-    padding: 1.1rem 5.3rem;
+    padding: 1.3rem 6rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 
-.input-box input:hover {
+.input-container option {
+    font-size: 20px;
+
+
+    
+}
+
+.input-container input:hover {
     background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
+.input-container input:focus-visible {
+    outline: 3px solid #6F2A8C;
 }
 
-.input-box label {
-    font-size: 1rem;
+.input-container label {
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
-.input-box input::placeholder {
+.input-container input::placeholder {
     color: #000000be;
 }
 
@@ -130,7 +152,7 @@ button a {
 
 @media screen and (max-width: 930px) {
 
-    .input-group {
+    .input-div {
         justify-content: center;
     }
 

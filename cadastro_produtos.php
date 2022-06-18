@@ -100,44 +100,45 @@
             <div class="col-12">
                 <div class="form">
                     <form action="" method="POST">
-                        <div class="form-header">
-                            <div class="title text-center">
-                                <h1>Cadastrar Produtos</h1>
+                        <div class="formHeader">
+                            <div class="text-center">
+                                <h1>Cadastrar Produto</h1>
                             </div>
                         </div>
 
-                        <div class="input-group">
-                            <div class="input-box">
+                        <div class="input-div">
+                            <div class="input-container">
                                 <label for="nome_produto">Nome do Produto</label>
-                                <input type="text" id="inputNome_produto" name="nomeProduto" class="form-control" placeholder="Digite o nome do produto" required><br>
+                                <input type="text" id="inputNome_produto" name="nomeProduto" class="form-control" placeholder="Digite o nome do produto" required>
                             </div>
-
-                            <div class="input-box">
+                            
+                            <div class="input-container">
                                 <label for="codigo">Código</label>
                                 <input type="text" id="inputCodigo" name="codigo" class="form-control" placeholder="Digite o código do produto" required><br>
                             </div>
 
 
-                            <div class="input-box">
+                            <div class="input-container">
                                 <label for="fornecedor">Fornecedor</label>
-                                <input type="text" id="inputFornecedor" name="fornecedor" class="form-control" placeholder="Digite o nome do Fornecedor" required><br>
+                                <input type="text" id="inputFornecedor" name="fornecedor" class="form-control" placeholder="Digite o fornecedor" required><br>
                             </div>
 
-                            <div class="input-box">
+                            <div class="input-container">
                                 <label for="custo">Custo do Produto</label>
                                 <input type="text" id="inputCusto" name="custo" class="form-control" placeholder="Digite o custo do produto" required><br>
                             </div>
 
-                            <div class="input-box">
+                            <div class="input-container">
                                 <label for="valor">Valor do Produto</label>
 
                                 <input type="text" id="inputValor_venda" name="valor" class="form-control" placeholder="Digite o valor do produto" required>
                             </div>
 
-                            <div class="input-box">
+                            <div class="input-container">
                                 <label for="select">Vendedor</label>
                                 <select name="vendedor" class='form-select'>
-                                    <option selected></option>
+                                    <option disabled selected></option>
+
                                     <?php
                                     include '_scripts/config.php';
                                     $sql = "SELECT nome FROM dados_user WHERE tipo = 'Vendedor'";
@@ -148,33 +149,29 @@
                                     }
                                     ?>
                                 </select>
-
                             </div>
 
-
+                            
                         </div>
+
+                        <div class="form-group">
+  <label for="exampleFormControlTextarea1">Descrição</label>
+  <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+</div>
                         <div class="continue-button">
                             <button><a href="#">Cadastrar</a> </button>
                         </div>
-
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
-
-
 </html>
-
 
 <?php
 if (isset($_POST['nomeProduto']) || isset($_POST['codigo'])) {
@@ -195,7 +192,6 @@ if (isset($_POST['nomeProduto']) || isset($_POST['codigo'])) {
         $sql = "INSERT INTO `cad_produto` (`id`, `data_cadastro`, `nome_produto`, `nome_vendedor`, `fornecedor`, `custo_produto`, `valor_venda`, `codigo_produto`) VALUES (NULL, current_timestamp(), '$nome', '$vendedor', '$fornecedor', '$custo', '$valor', '$codigo')";
 
         $query = $mysqli->query($sql) or die("ERRO: " . $mysqli->error);
-
     } else {
     }
 }

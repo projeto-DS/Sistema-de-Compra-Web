@@ -1,0 +1,78 @@
+/* Cores */
+
+/* #F207A0 */
+/* #6F2A8C */
+/* #341959 */
+/* #CFC7D9 */
+/* #1EC6D9 */
+
+/* Color Theme Swatches in Hex */
+.color-theme_image_2022-06-16_231356179-1-hex { color: #F207A0; }
+.color-theme_image_2022-06-16_231356179-2-hex { color: #6F2A8C; }
+.color-theme_image_2022-06-16_231356179-3-hex { color: #341959; }
+.color-theme_image_2022-06-16_231356179-4-hex { color: #CFC7D9; }
+.color-theme_image_2022-06-16_231356179-5-hex { color: #1EC6D9; }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn {
+    margin-top: 1rem;
+    background-color: #6F2A8C;
+    padding: 1.2rem 3rem ;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn-confirmar {
+    color: white;
+    background-color: #228b22;
+}
+
+.btn-cancelar {
+    background-color: #900020;
+}
+
+.btn-confirmar:hover {
+    color: white;
+    background-color: #145914;
+
+}
+
+.btn-cancelar:hover {
+    color: white;
+    background-color: #5d0216;
+}
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+
+.labelSpace label{
+    padding-left: 23px;
+}
+
+.produto_img{
+    border: black 1px solid;
+    width: 400px;
+}
+ 
+.form-floating input:focus-visible {
+    transition: 0.2s ;
+    outline: 2px solid #650087b0;
+    border: 0;
+}
+
+ label {
+    font-weight: 500;
+}
