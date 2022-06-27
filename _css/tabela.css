@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h1{
+  color: white;
+  margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+}
+
+.titletest{
+  color: rgb(0, 0, 0);
+
+}
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background: rgb(84, 8, 134);
+}
+
+table tr {
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+/*  */
+
+.icon {
+    border: black 2px solid;
+    padding: 10px ;
+}
+
+.icon:hover {
+  transition: 0.3s;
+  border: purple 2px solid;
+  opacity: 0.6;
+}
+.icon i {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .apagarIcon {
+    background-color: #a51b0b;
+  }
+  
+  .editarIcon {
+    background-color: #4169e1;
+  }

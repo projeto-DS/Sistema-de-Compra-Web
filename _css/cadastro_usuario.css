@@ -15,6 +15,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+body{
+    background-color: #341959;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -22,19 +26,28 @@
     font-family: 'Inter', sans-serif;
 }
 
-.btn {
+.caixa{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+.botao {
     margin-top: 1rem;
     background-color: #6F2A8C;
-    padding: 1.2rem 3rem ;
+    padding: 1rem 1rem ;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
+
 }
 
 .btn-confirmar {
     color: white;
     background-color: #228b22;
+    align-self: right;
 }
 
 .btn-cancelar {
@@ -59,7 +72,7 @@
     }
 
 .labelSpace label{
-    padding-left: 23px;
+    padding-left: 30px;
 }
 
 .produto_img{
@@ -75,4 +88,17 @@
 
  label {
     font-weight: 500;
+}
+
+
+h1::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    width: 32vw;
+    height: 0.3rem;
+    background-color: #6F2A8C;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }

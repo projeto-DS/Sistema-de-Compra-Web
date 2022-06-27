@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: #6f2a8c;
+}
+
+table tr {
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+/*  */
+
+.icon {
+    border: black 2px solid;
+    border-radius: 5px;
+}
+
+.icon:hover {
+  transition: 0.3s;
+  border: purple 2px solid;
+  opacity: 0.6;
+}
+.icon i {
+  padding: 10px ;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .venderIcon {
+    background-color: #009000;
+  }
+
+  .apagarIcon {
+    background-color: #900000;
+  }
+  
+  
+
+  h4{
+    margin: 0;
+    padding: 0;
+
+  }
+
+.btnCarrinho{
+  background-color: #6F2A8C;
+  padding: 1rem 1rem ;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+
+}
+
+
+@media screen and (min-width: 768px){}
+.modal {
+    width: 100%;
+}
