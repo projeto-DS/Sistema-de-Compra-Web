@@ -92,10 +92,7 @@ include "../_scripts/functions.php";
                         </div>
 
                         <div class="col-md-3 container">
-                            <button onclick="window.location.href = '../produtos/listar_produtos.php'" type="submit" class="btn btn-confirmar mb-1 card-body">
-                                <p class="card-text">editar</p>
-                                <i class="fa-solid fa-pen-to-square card-icon"></i>
-                            </button>
+                           
                         </div>
 
                         <div class="col-md-3 container">

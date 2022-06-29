@@ -130,7 +130,6 @@ include "../_scripts/functions.php";
 <?php
 if (!empty($_POST['nomeProduto']) || !empty($_POST['codigo'])) {
 
-    include '../_scripts/functions.php';
 
     if (cadastrarProduto($_POST)) { ?>
 

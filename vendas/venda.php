@@ -173,9 +173,9 @@ if (isset($_POST['apagar'])) {
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btnCarrinhoCancelar" data-bs-dismiss="modal">Fechar</button>
                                             <form action="" method="post">
-                                                <button type="submit" class="btnCarrinho" id="finalizar" name="enviar">Finalizar Compra</button>
+                                                <button type="submit" class="btnCarrinho1" id="finalizar" name="enviar">Finalizar Compra</button>
 
                                             </form>
                                         </div>

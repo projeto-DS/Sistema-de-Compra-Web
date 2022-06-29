@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../_images/logo.png">
-  <title>My little Pony</title>
+  <title>Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../_css/login.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="../_images/bx-package.svg">
@@ -18,8 +18,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <form class="form-signin mt-5 " action="" method="POST">
-          <input type="text" id="inputUsuario" name="usuario" class="form-control mt-4" placeholder="Usuário" required autofocus><br>
+        <img  src="../_images/logo1.png" alt="Tela de Login" width="400px" >
+
+        <form class="form-signin " action="" method="POST">
+
+          <input type="text" id="inputUsuario" name="usuario" class="form-control " placeholder="Usuário" required autofocus><br>
 
           <input type="password" name="senha" id="inputSenha" class="form-control" placeholder="Senha" required><br>
 

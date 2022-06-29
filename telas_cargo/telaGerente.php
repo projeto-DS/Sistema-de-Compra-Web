@@ -253,10 +253,7 @@ include "../_scripts/functions.php";
                         </div>
 
                         <div class="col-md-3 container">
-                            <button type="submit" class="btn btn-confirmar mb-1 card-body">
-                                <p class="card-text">comprar mais</p>
-                                <i class="fa-solid fa-cart-arrow-down fa-3x card-icon"></i>
-                            </button>
+                            <!--  -->
                         </div>
 
                         <div class="col-md-3 container">
@@ -304,10 +301,10 @@ include "../_scripts/functions.php";
                         </div>
 
                         <div class="col-md-3 container">
-                            <!-- <button type="submit" class="btn btn-confirmar mb-1 card-body">
-                                    <p class="card-text">excluir</p>
-                                    <i class="fa-solid fa-trash-can fa-3x card-icon"></i>
-                                </button> -->
+                            <button onclick="window.location.href = '../usuarios/listar_usuariosPesquisar.php'" type="submit" class="btn btn-confirmar mb-1 card-body">
+                                <p class="card-text">Pesquisar</p>
+                                <i class="fa-solid fa-magnifying-glass fa-3x card-icon"></i>
+                            </button>
                         </div>
 
                         <div class="col-md-3 container">
